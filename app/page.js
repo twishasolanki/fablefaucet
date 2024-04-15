@@ -121,10 +121,10 @@ export default function Homepage() {
         </div>
       </div>
       <div className="flex sm:flex-row flex-col mb-4 p-5">
-        <div className="sm:w-1/2 flex sm:mx-auto justify-end items-end mx-auto justify-center items-center ">
+        <div className="md:w-1/2 flex mx-auto md:justify-end md:items-end justify-center items-center ">
           <img src='assets/about1-1.png' className='w-2/3' />
         </div>
-        <div className="sm:w-1/2">
+        <div className="md:w-1/2">
           <div className="card sm:w-3/4 bg-base-100 shadow-lg">
             <div className="card-body rounded-none">
               <p className='text-4xl font-bold'>______</p>
@@ -166,7 +166,7 @@ export default function Homepage() {
 
       <div>
         <div style={{ backgroundImage: 'url("assets/black-6.jpg")' }} className='w-full'>
-          <div class="flex md:flex-row flex-col mb-4">
+          <div class="flex md:flex-row flex-col">
             <div class="md:w-1/2 md:p-24 p-10 ">
               <img src='assets/7-removebg-preview.png' />
               <p className='md:text-3xl text-xl text-white font-bold'>ALL FABLE PRODUCT ARE WARRANTED FOR 7-YEAR COVERING ANY MANUFACTURING DEFECT UNLESS OTHERWISE STATED.</p>
@@ -180,28 +180,163 @@ export default function Homepage() {
           </div>
         </div>
 
-        <div style={{ backgroundImage: 'url("assets/bg01.jpg")'}} className='w-full'>
-        <div class="flex mb-4">
-            <div class="w-1/2 flex flex-col mx-auto justify-end items-end">
+        {/* <div style={{ backgroundImage: 'url("assets/bg01.jpg")', filter: 'inherit',        backgroundRepeat: 'no-repeat', }} className='w-screen'>
+          <div class="flex md:flex-row flex-col p-20">
+            <div class="md:w-1/2 flex flex-col mx-auto md:justify-end md:items-end justify-start items-start">
               <p className='text-3xl text-white font-bold '>Contact Info</p>
               <p className='text-3xl text-white font-bold mt-5'>Our <br />Location:</p>
-              <p className='text-md text-white w-36  mt-5'> Balaji Plumbing Systems Plot No. 15, Rani Industrial Area-2, Behind Parin Furniture, Nr. NH-8, Gondal Road, Vavdi-17 Rajkot-360004</p>
-              <p className='text-3xl text-white font-bold mt-5'>Call for <br/>help:</p>
-              <p className='text-md text-white w-36  mt-5'> +91-9327471604</p>
-              <p className='text-3xl text-white font-bold mt-5'>Mail us for <br/>information</p>
-              <p className='text-md text-white w-36  mt-5'> fablefaucet@gmail.com</p>
-        
-            
+              <div className='flex '>
+                <button type='button' className='bg-black rounded-full w-14 h-14 mt-5 mb-4'><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" class="bi bi-geo-alt-fill ms-4" viewBox="0 0 16 16">
+                  <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
+                </svg></button>
+                <p className='text-md text-white w-36 ms-5 md:mt-5'> Balaji Plumbing Systems Plot No. 15, Rani Industrial Area-2, Behind Parin Furniture, Nr. NH-8, Gondal Road, Vavdi-17 Rajkot-360004</p>
+
+              </div>
+              <p className='text-3xl text-white font-bold mt-5 md:mx-12'>Call for <br />help:</p>
+              <div className='flex md:mr-4'>
+                <button type='button' className='bg-black rounded-full w-14 h-14 '>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" class="bi bi-telephone-fill ms-4" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                  </svg>
+                </button>
+                <p className='text-md text-white w-34 md:ms-4 mt-5'> +91-9327471604</p>
+              </div>
+
+              <p className='text-3xl text-white font-bold mt-5'>Mail us for <br />information</p>
+              <div className='flex  md:mr-5'>
+                <button type='button' className='bg-black rounded-full w-14 h-14 md:ms-12'>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" class="bi bi-envelope ms-4" viewBox="0 0 16 16">
+                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
+                  </svg>
+                </button>
+                <p className='text-md text-white w-36  mt-5'> fablefaucet@gmail.com</p>
+              </div>
+    
+
+
             </div>
-            <div class="w-1/2 ">
-              <div className="card w-96 bg-white bg-transparent shadow-sm rounded-none ">
-            fghnjmk
+            <div class="md:w-1/2 w-[135%] ms-12 ">
+              <div className="card w-[62%] bg-transparent shadow-sm rounded-none text-white text-3xl font-bold h-full p-5 " style={{ background: '#6B6760' }}>
+                Get in touch for any kind of help and informations
+                <div className='mt-5 '>
+                  <label className="input input-bordered flex items-center gap-2 text-gray-400 rounded-none">
+                    Name
+                    <input type="text" className="grow" />
+                  </label>
+                  <label className="input input-bordered flex items-center gap-2 text-gray-400 mt-5 rounded-none">
+                    Email
+                    <input type="text" className="grow" />
+                  </label>
+                  <label className="input input-bordered flex items-center gap-2 text-gray-400 mt-5 rounded-none">
+                    Phone
+                    <input type="text" className="grow" />
+                  </label>
+                  <textarea className="textarea textarea-bordered mt-5 rounded-none w-[100%] h-28" placeholder='Address'></textarea>
+                  <button type='button' className='bg-black text-white text-sm px-8 mt-6  py-3 rounded-md  font-normal'>Send Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> */}
+
+        <div>
+          <div style={{ position: 'relative' }}>
+            <img src="assets/bg01.jpg" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover', filter: 'brightness(0.12)' }} />
+            <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', backgroundColor: 'rgba(0, 0, 0, 0.5)' }}>
+              <div className='flex mx-auto justify-center items-center'>
+               <div className='w-1/2 p-16 mt-2 '> 
+               <p className="text-5xl font-bold  text-white">Contact Info</p>
+                <p className="text-2xl font-bold mt-5 ms-20  text-white">Our <br />Location:</p>
+                <div className="flex ">
+                  <button type="button" className="bg-black rounded-full w-14 h-14 -mt-16 ">
+                    <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} fill="white" className="bi bi-geo-alt-fill ms-4" viewBox="0 0 16 16">
+                      <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
+                    </svg>
+                  </button>
+                  <p className="text-md w-36 ms-5  text-white">Balaji Plumbing Systems Plot No. 15, Rani Industrial Area-2, Behind Parin Furniture, Nr. NH-8, Gondal Road, Vavdi-17 Rajkot-360004</p>
+                </div>
+                <p className="text-2xl font-bold mt-5 md:mx-20  text-white">Call for <br />help:</p>
+                <div className="flex md:mr-4">
+                  <button type="button" className="bg-black rounded-full w-14 h-14  -mt-16">
+                    <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} fill="white" className="bi bi-telephone-fill ms-4" viewBox="0 0 16 16">
+                      <path fillRule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                    </svg>
+                  </button>
+                  <p className="text-md  md:ms-4  text-white ">+91-9327471604</p>
+                </div>
+                <p className="text-2xl font-bold mt-5 ms-20 text-white">Mail us for <br />information</p>
+                <div className="flex">
+                  <button type="button" className="bg-black rounded-full w-14 h-14 -mt-16">
+                    <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} fill="white" className="bi bi-envelope ms-4" viewBox="0 0 16 16">
+                      <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
+                    </svg>
+                  </button>
+                  <p className="text-md  text-white ms-5 ">fablefaucet@gmail.com</p>
+                </div>
+               </div>
+               </div>
+            </div>
+          
+           <div className="flex md:flex-row flex-col p-20">
+              <div className="md:w-1/2 flex flex-col mx-auto md:justify-end md:items-end justify-start items-start text-white">
+                <p className="text-3xl font-bold ">Contact Info</p>
+                <p className="text-3xl font-bold mt-5">Our <br />Location:</p>
+                <div className="flex ">
+                  <button type="button" className="bg-black rounded-full w-14 h-14 mt-5 mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} fill="white" className="bi bi-geo-alt-fill ms-4" viewBox="0 0 16 16">
+                      <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
+                    </svg>
+                  </button>
+                  <p className="text-md w-36 ms-5 mt-5">Balaji Plumbing Systems Plot No. 15, Rani Industrial Area-2, Behind Parin Furniture, Nr. NH-8, Gondal Road, Vavdi-17 Rajkot-360004</p>
+                </div>
+                <p className="text-3xl font-bold mt-5 md:mx-12">Call for <br />help:</p>
+                <div className="flex md:mr-4">
+                  <button type="button" className="bg-black rounded-full w-14 h-14 ">
+                    <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} fill="white" className="bi bi-telephone-fill ms-4" viewBox="0 0 16 16">
+                      <path fillRule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                    </svg>
+                  </button>
+                  <p className="text-md w-34 md:ms-4 mt-5">+91-9327471604</p>
+                </div>
+                <p className="text-3xl font-bold mt-5">Mail us for <br />information</p>
+                <div className="flex  md:mr-5">
+                  <button type="button" className="bg-black rounded-full w-14 h-14 md:ms-12">
+                    <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} fill="white" className="bi bi-envelope ms-4" viewBox="0 0 16 16">
+                      <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
+                    </svg>
+                  </button>
+                  <p className="text-md w-36  mt-5">fablefaucet@gmail.com</p>
+                </div>
+              </div>
+              <div className="md:w-1/2 w-[135%] ms-12 ">
+                <div className="card w-[62%] bg-transparent shadow-sm rounded-none text-white text-3xl font-bold h-full p-5 " style={{ background: 'rgba(107, 103, 96, 0.5)' }}>
+                  Get in touch for any kind of help and information
+                  <div className="mt-5 ">
+                    <label className="input input-bordered flex items-center gap-2 text-gray-400 rounded-none">
+                      Name
+                      <input type="text" className="grow" />
+                    </label>
+                    <label className="input input-bordered flex items-center gap-2 text-gray-400 mt-5 rounded-none">
+                      Email
+                      <input type="text" className="grow" />
+                    </label>
+                    <label className="input input-bordered flex items-center gap-2 text-gray-400 mt-5 rounded-none">
+                      Phone
+                      <input type="text" className="grow" />
+                    </label>
+                    <textarea className="textarea textarea-bordered mt-5 text-lg rounded-none w-[100%] h-28" placeholder="Address" defaultValue={""} />
+                    <button type="button" className="bg-black text-white text-sm px-8 mt-6  py-3 rounded-md  font-normal">Send Now</button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
 
       </div>
+
+
+
       <Footer />
     </div>
   )
