@@ -2,6 +2,7 @@ import React from 'react'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Products from './components/Products'
+import Productitem from './components/Productitem';
 
 export default function Homepage() {
   const ShopItems = [
@@ -239,6 +240,41 @@ export default function Homepage() {
           </div>
         </div> */}
 
+
+        <div style={{
+          position: 'relative',
+          backgroundColor: 'black', // Set background color to black
+          width: '100vw',
+
+          color: 'white', // Set text color to white
+        }} className='flex flex-col'>
+
+          {/* Background Image */}
+          <div style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            backgroundImage: 'url("./assets/footer-bg.jpg")',
+            backgroundRepeat: 'no-repeat',
+            backgroundSize: 'cover',
+            filter: 'brightness(50%)'
+          }} />
+
+          {/* Content */}
+          <div style={{
+            position: 'relative',
+            zIndex: '1', // Set higher z-index to place it above the blurred background
+          }}>
+            <div className='p-16 md:ms-32'>
+              <p className='font-bold'>_________</p>
+              <p className='text-5xl font-bold'>Product</p>
+            </div>
+          </div>
+     
+        </div>
+        <Productitem/>
         <div>
           <div style={{ position: 'relative' }}>
             <img src="assets/bg01.jpg" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover', filter: 'brightness(0.12)' }} />
