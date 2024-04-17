@@ -2,6 +2,7 @@
 
 'use client';
 import React, { useState, useEffect } from 'react';
+import ADUABENZ from '@/public/assets/ADUABENZ 1 4.png';
 
 export default function Header() {
     const [activeItem, setActiveItem] = useState(
@@ -25,8 +26,8 @@ export default function Header() {
             <header>
                 <nav className="bg-[#FAFAFA] border-gray-200 px-4 shadow-lg lg:px-8">
                     <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
-                        <a href="https://flowbite.com" className="flex items-center">
-                            <img src="./assets/ADUABENZ 1 4.png" className="mr-3 w-52 h-16 " />
+                        <a href="/" className="flex items-center">
+                            <img src='../assets/ADUABENZ 1 4.png' className="mr-3 w-52 h-16" alt="ADUABENZ Image" />
                         </a>
                         <div className="flex items-center lg:order-2">
                             <a href="#" className="text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none">Get started</a>

@@ -1,28 +1,4 @@
-// import React from 'react'
-// import Layout from '../components/Layout'
-
-// export default function enquiry() {
-//     return (
-//         <>
-//             <Layout>
-
-
-//                 <div className='flex justify-center items-center p-12'>
-//                     <div style={{backgroundImage:'url("./assets/bg01-1.jpg")', backgroundRepeat:'no-repeat'}} className="block w-full p-6  bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-
-//                         <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
-//                         <p className="font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-//                     </div>
-//                 </div>
-//             </Layout>
-//         </>
-
-//     )
-// }
-
 import React from 'react'
-import Header from "@/app/components/Header";
-import Footer from "@/app/components/Footer";
 import Layout from '../components/Layout';
 
 export default function enquiry() {
@@ -58,7 +34,7 @@ export default function enquiry() {
                             position: 'relative',
                             zIndex: '1', // Set higher z-index to place it above the blurred background
                         }}>
-                            <div className='justify-center md:p-20 p-16'>
+                            <div className='justify-center md:p-20 p-16 '>
                                 <p className='text-5xl font-bold'>Enquiry Now</p>
 
                                 <nav className="flex p-8" aria-label="Breadcrumb">
@@ -80,9 +56,9 @@ export default function enquiry() {
                     </div>
 
 
-                    <div  className='mt-16'>
+                    <div  className='mt-16 mb-12'>
                         <p className='text-3xl font-bold text-center mt-5'>REQUEST FOR A QUOTE</p>
-                        <div className='flex md:justify-center md:items-center '>
+                        <div className='flex md:justify-center md:items-center mt-5 '>
 
                          
                             <div style={{ position: 'relative', backgroundColor: 'black', backgroundImage: 'url("./assets/bg01-1.jpg")', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }} className="block md:w-[75%] w-full  p-5  ">
