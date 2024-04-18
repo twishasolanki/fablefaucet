@@ -4,7 +4,7 @@ import Layout from '../components/Layout'
 export default function Contact() {
   return (
     <Layout>
-      <div>
+      <div >
         <div style={{
           position: 'relative',
           backgroundColor: 'black', // Set background color to black
@@ -52,7 +52,7 @@ export default function Contact() {
             </div>
           </div>
         </div>
-        <div class="flex md:flex-row flex-col">
+        <div class="flex md:flex-row flex-col content" htmlFor="reload">
           <div class="md:w-1/2 flex flex-col mx-auto justify-center items-center ">
             <p class='text-4xl font-bold ms-12 md:mt-0 mt-10'>Contact Info</p>
             <p class='text-2xl font-bold mt-7'>Our Location:</p>

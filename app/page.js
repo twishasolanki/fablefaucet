@@ -98,6 +98,17 @@ export default function Homepage() {
   return (
     <div>
       <Header />
+      {/* <div>
+        <input type="checkbox" id="reload" className="reload" />
+        <div className="container">
+          <label>
+            <h2>Content</h2>
+            <p>This is some content.</p>
+            <button>Reload Content</button>
+          </label>
+        </div>
+      </div> */}
+
       <div className="carousel w-full h-5/6">
         <div id="slide1" className="carousel-item relative w-full">
           <img src="assets/3.jpg" className="w-full" />
@@ -121,11 +132,11 @@ export default function Homepage() {
           </div>
         </div>
       </div>
-      <div className="flex sm:flex-row flex-col mb-4 p-5">
+      <div className="flex sm:flex-row flex-col mb-4 p-5 content" htmlFor="reload">
         <div className="md:w-1/2 flex mx-auto md:justify-end md:items-end justify-center items-center ">
           <img src='assets/about1-1.png' className='w-2/3' />
         </div>
-        <div className="md:w-1/2">
+        <div className="md:w-1/2 "   >
           <div className="card sm:w-3/4 bg-base-100 shadow-lg">
             <div className="card-body rounded-none">
               <p className='text-4xl font-bold'>______</p>
@@ -276,10 +287,10 @@ export default function Homepage() {
 
 
         <div>
-          <div style={{ position: 'relative' }}>
+          <div style={{ position: 'relative' }} className="content" htmlFor="reload">
             <img src="assets/bg01.jpg" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover', filter: 'brightness(0.12)' }} />
 
-            <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', backgroundColor: 'rgba(0, 0, 0, 0.5)' }}>
+            <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', backgroundColor: 'rgba(0, 0, 0, 0.5)' }} >
               <div className='flex md:flex-row flex-col md:mx-auto justify-center items-center'>
                 <div className='md:w-1/2 md:p-16 mt-2 '>
                   <p className="md:text-5xl text-3xl font-bold  text-white">Contact Info</p>
