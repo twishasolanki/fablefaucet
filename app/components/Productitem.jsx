@@ -49,9 +49,9 @@ export default function Productitem() {
 
     return (
         <>
-                <div className='md:p-32 p-12'>
+                <div className='md:w-3/4 md:ms-52'>
                     {chunkedItems.map((row, rowIndex) => (
-                        <div className={`flex ${rowIndex % 2 === 0 ? 'md:flex-row flex-col' : 'md:flex-row-reverse flex-col-reverse'}`} key={rowIndex}>
+                        <div className={`flex  ${rowIndex % 2 === 0 ? 'md:flex-row flex-col' : 'md:flex-row-reverse flex-col-reverse'}`} key={rowIndex}>
                             {row.map((item, index) => (
                                 <React.Fragment key={index}>
                                     {rowIndex % 2 === 0 ? (

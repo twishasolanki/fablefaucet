@@ -56,9 +56,9 @@ export default function enquiry() {
                     </div>
 
 
-                    <div  className='mt-16 mb-12'>
+                    <div className='mt-16 mb-12'>
                         <p className='text-3xl font-bold text-center mt-5'>REQUEST FOR A QUOTE</p>
-                        <div className='flex md:justify-center md:items-center mt-5 '>
+                        {/* <div className='flex md:justify-center md:items-center mt-5 '>
 
                          
                             <div style={{ position: 'relative', backgroundColor: 'black', backgroundImage: 'url("./assets/bg01-1.jpg")', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }} className="block md:w-[75%] w-full  p-5  ">
@@ -90,10 +90,77 @@ export default function enquiry() {
                                 </div>
                             </div>
 
+                        </div> */}
+
+                        <div style={{
+                            position: 'relative',
+                            // Set background color to black
+                            width: '100vw',
+                            
+                            alignItems: 'center',
+                            color: 'white', // Set text color to white
+                        }} className='flex flex-col'>
+
+                            {/* Background Image */}
+                            <div style={{
+                                position: 'absolute',
+                                top: '30px',
+                                
+                                width: '70%',
+                                height: '100%',
+                                backgroundImage: 'url("./assets/bg01-1.jpg")',
+                                backgroundRepeat: 'no-repeat',
+                                backgroundSize: 'cover',
+                                filter: 'brightness(50%)'
+                            }} className='rounded-2xl'/>
+
+                            {/* Content */}
+                            <div style={{
+                                position: 'relative',
+                                zIndex: '1',
+                                right:'100px',
+                                top:'30px'
+                            }}>
+                                <div className='  '>
+
+                                    <div className='flex md:justify-center md:items-center mt-5 '>
+                                        {/* <div style={{ position: 'relative', backgroundColor: 'black', backgroundImage: 'url("./assets/bg01-1.jpg")', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }} className="block md:w-[75%] w-full  p-5  ">
+                               */}
+                                        <div className="flex  md:flex-row flex-col mb-4 p-10">
+                                            <div className="md:w-full  flex mx-auto md:justify-center md:items-center ">
+                                                <div className='mt-5 md:w-[500%]'>
+
+                                                    <input type="text" className="w-full input input-bordered flex items-center gap-2 text-gray-400 rounded-none" placeholder='Name' />
+
+                                                    <input type="text" className="w-full input input-bordered flex items-center gap-2 text-gray-400 rounded-none mt-5" placeholder='Email' />
+                                                    <input type="text" className="w-full input input-bordered flex items-center gap-2 text-gray-400 rounded-none mt-5" placeholder='Phone' />
+                                                    <input type="text" className="w-full input input-bordered flex items-center gap-2 text-gray-400 rounded-none mt-5" placeholder='Address' />
+                                                    <textarea className="textarea textarea-bordered mt-5 rounded-none w-[100%] h-28" placeholder='Message'></textarea>
+                                                    <button type='button' className='bg-black text-white text-sm px-8 mt-6  py-3 rounded-md  font-normal'>Send Now</button>
+                                                </div>
+                                            </div>
+                                            <div className="md:w-1/2 w-full flex mx-auto md:justify-start md:items-start justify-center items-center md:ms-5">
+                                                <div className="md:w-1/3 md:mt-0 mt-10 ">
+                                                    <div className='md:h-80 mt-5 w-[100%]'>
+                                                        <div className="mapouter">
+                                                            <div className="gmap_canvas">
+                                                                <iframe className='md:w-[600%]  md:h-[385px] ' id="gmap_canvas" src="https://maps.google.com/maps?q=636+5th+Ave%2C+New+York&t=&z=13&ie=UTF8&iwloc=&output=embed" frameBorder={0} scrolling="no" marginHeight={0} marginWidth={0} />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
                         </div>
                     </div>
-
                 </div>
+
+                {/* </div> */}
 
             </Layout>
         </>

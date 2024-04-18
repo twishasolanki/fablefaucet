@@ -122,7 +122,7 @@ import Layout from './Layout'
 
 export default function Products() {
   return (
-    <div>
+    <div className=' '>
       <Layout >
         <div style={{
           position: 'relative',
@@ -131,7 +131,7 @@ export default function Products() {
           justifyContent: 'center',
           alignItems: 'center',
           color: 'white', // Set text color to white
-        }} className='flex flex-col'>
+        }} className='flex flex-col '>
 
           {/* Background Image */}
           <div style={{
@@ -144,13 +144,13 @@ export default function Products() {
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'cover',
             filter: 'brightness(50%)'
-          }} />
+          }} className='' />
 
           {/* Content */}
           <div style={{
             position: 'relative',
             zIndex: '1', // Set higher z-index to place it above the blurred background
-          }}>
+          }} className=''>
             <div className='justify-center md:p-20 p-16'>
               <p className='text-5xl font-bold'>Products</p>
 
@@ -171,7 +171,17 @@ export default function Products() {
             </div>
           </div>
         </div>
-        <Productitem />
+
+        <div className=' bg-gray-50 py-12'>
+          <div className='text-5xl font-bold bg-white p-12' >
+            <p className='ms-32' ><u>Pro</u>ducts</p>
+
+          </div>
+          <div className='mb-10'>
+            <Productitem />
+          </div>
+
+        </div>
       </Layout>
 
     </div>
