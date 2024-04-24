@@ -5,8 +5,8 @@ export default function Footer() {
         <>
 
 
-            <div className="flex md:flex-row flex-col  p-32 bg-[#1D1D1D] text-neutral-content ">
-                <div className="md:w-1/2 text-white">
+            <div className="flex md:flex-row flex-col  md:p-32  bg-[#1D1D1D] text-neutral-content ">
+                <div className="md:w-1/2 text-white md:mt-0 xs:mt-10">
                     <p className='text-3xl font-bold text-white'>Contact Info</p>
                     <div className='mt-5 flex'>
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-geo-alt-fill" viewBox="0 0 16 16">
@@ -87,7 +87,7 @@ export default function Footer() {
                     <div className=' h-48 mt-5 w-[100%]'>
                         <div className="mapouter">
                             <div className="gmap_canvas">
-                                <iframe width={450} height={190} id="gmap_canvas" src="https://maps.google.com/maps?q=636+5th+Ave%2C+New+York&t=&z=13&ie=UTF8&iwloc=&output=embed" frameBorder={0} scrolling="no" marginHeight={0} marginWidth={0} />
+                                <iframe className='md:w-[450px] xs:w-[350px] xs:h-[150px] md:h-[190px]'  id="gmap_canvas" src="https://maps.google.com/maps?q=636+5th+Ave%2C+New+York&t=&z=13&ie=UTF8&iwloc=&output=embed" frameBorder={0} scrolling="no" marginHeight={0} marginWidth={0} />
 
                             </div>
                         </div>

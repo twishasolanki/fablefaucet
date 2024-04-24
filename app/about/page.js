@@ -1,6 +1,4 @@
 import React from 'react'
-import Header from "@/app/components/Header";
-import Footer from "@/app/components/Footer";
 import Layout from '../components/Layout';
 
 export default function about() {
