@@ -41,7 +41,7 @@ export default function Header() {
                 <nav className="bg-[#FAFAFA] border-gray-200 px-4 shadow-lg lg:px-8">
                     <div className="flex flex-wrap md:justify-between md:items-center md:mx-auto md:max-w-screen-xl">
                         <a href="/" className="flex items-center">
-                            <img src='../assets/ADUABENZ 1 4.png' className="mr-3 md:w-52 md:h-16 w-44  xs:w-36 " alt="ADUABENZ Image" />
+                            <img src='../assets/logo-2-removebg-preview.png' className="mr-3 md:w-[300px] md:h-32 w-44  xs:w-36 " alt="ADUABENZ Image" />
                         </a>
 
                         <div className="flex items-center lg:order-2 md:hidden block">
@@ -60,10 +60,25 @@ export default function Header() {
                                     </label>
                                 </div>
                                 <div className="drawer-side">
+
                                     <label htmlFor="my-drawer" aria-label="close sidebar" className="drawer-overlay"></label>
+
+
                                     <ul className="menu p-4 w-80 min-h-full bg-base-200 text-base-content">
-                                        <li><a>Sidebar Item 1</a></li>
-                                        <li><a>Sidebar Item 2</a></li>
+                                        <li> <img src='../assets/logo-2-removebg-preview.png' className="mr-3 md:w-[300px] md:h-32 w-44  xs:w-36 ms-16 " alt="ADUABENZ Image" /></li>
+                                        <li className='mt-10'><a href='/'>HOME</a></li>
+
+                                        <hr />
+                                        <li><a href='/about'>ABOUT US</a></li>
+                                        <hr />
+                                        <li><a href='/product'>PRODUCTS</a></li>
+                                        <hr />
+                                        <li><a href='/download'>DOWNLOAD</a></li>
+                                        <hr />
+                                        <li><a href='/enquiry'>ENQUIRY</a></li>
+                                        <hr />
+                                        <li><a href='/contact'>CONTACT US</a></li>
+                                        <hr />
                                     </ul>
                                 </div>
                             </div>
