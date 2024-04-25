@@ -41,7 +41,7 @@ export default function Header() {
                 <nav className="bg-[#FAFAFA] border-gray-200 px-4 shadow-lg lg:px-8">
                     <div className="flex flex-wrap md:justify-between md:items-center md:mx-auto md:max-w-screen-xl">
                         <a href="/" className="flex items-center">
-                            <img src='../assets/logo-2-removebg-preview.png' className="mr-3 md:w-[300px] md:h-32 w-44  xs:w-36 " alt="ADUABENZ Image" />
+                            <img src='../assets/logo-2-removebg-preview.png' className="mr-3 md:w-[240px] md:h-32 w-44  xs:w-36 " alt="ADUABENZ Image" />
                         </a>
 
                         <div className="flex items-center lg:order-2 md:hidden block">
