@@ -1,7 +1,9 @@
+
+
 import Layout from "@/app/components/Layout";
+import Link from 'next/link';
 
 export default function Page({ params }) {
-
   const data = [
     {
       id: "1",
@@ -459,10 +461,12 @@ export default function Page({ params }) {
 
   ];
 
+
   const filteredData = data.filter((item) => item.category === params.categoryName);
+
   return (
     <>
-      <Layout >
+      <Layout>
         <div style={{
           position: 'relative',
           backgroundColor: 'black',
@@ -470,7 +474,7 @@ export default function Page({ params }) {
           justifyContent: 'center',
           alignItems: 'center',
           color: 'white',
-        }} className='flex flex-col'>
+        }} className='flex flex-col '>
 
 
           <div style={{
@@ -479,90 +483,63 @@ export default function Page({ params }) {
             left: 0,
             width: '100%',
             height: '100%',
-            backgroundImage: 'url("./assets/footer-bg2.jpg")',
+            backgroundImage: 'url("../assets/footer-bg2.jpg")',
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'cover',
             filter: 'brightness(50%)'
-          }} />
+          }} className='' />
 
 
           <div style={{
             position: 'relative',
             zIndex: '1',
-          }}>
-            {/* <div className='justify-center md:p-20 p-16'>
-              <p className='text-5xl font-bold'>{params.categoryName}</p>
+          }} className=''>
+            <div className='justify-center md:p-20 p-16'>
+              <p className='md:text-5xl text-3xl font-bold'>{params.categoryName}</p>
 
               <nav className="flex mt-5 ms-5" aria-label="Breadcrumb">
                 <ol className="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
                   <li className="inline-flex items-center">
-                    <a href="/" className="inline-flex items-center text-xl hover:text-[#252525] ">
+                    <a href="/" className="inline-flex items-center md:text-xl text-md hover:text-[#252525] ">
                       Home  -
                     </a>
                   </li>
                   <li>
                     <div className="flex items-center">
-                      <a className="text-xl ">{params.categoryName}</a>
-                    </div>
-                  </li>
-                </ol>
-              </nav>
-            </div> */}
-            <div className='justify-center items-center md:p-20 p-16'>
-              <p className='text-5xl font-bold'>{params.categoryName}</p>
-
-              <nav className="flex mt-5 " aria-label="Breadcrumb">
-                <ol className="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
-                  <li className="inline-flex items-center">
-                    <a href="/" className="inline-flex items-center text-xl hover:text-[#252525] ">
-                      Home  -
-                    </a>
-                  </li>
-                  <li>
-                    <div className="flex items-center">
-                      <a className="text-xl ">{params.categoryName}</a>
+                      <a className="md:text-xl text-md ">{params.categoryName}</a>
                     </div>
                   </li>
                 </ol>
               </nav>
             </div>
-
           </div>
         </div>
-        <div className="p-12 flex ">
-          {/* {filteredData.map((item, index) => (
+        <div className='flex flex-col md:w-full'>
 
-            <a href="/enquiry" key={index} class="block shadow-xl w-[460px] p-5 ms-5 bg-gray-50 border border-gray-200    ">
-              <img src={item.img} className="shadow-md w-[500px] h-[430px]" />
-              <div className="text-center mt-5">
-                <p className="font-bold text-xl">REV-{item.rev}</p>
-                <p className="font-medium text-md mt-3">{item.name}</p>
-                <div className="mt-5 mb-5">
-                  <a href="/enquiry" className="bg-black text-white  py-3.5 px-16">ENQUIRY NOW</a>
-                </div>
-              </div>
-            </a>
-          ))} */}
-
-          <div className="flex flex-wrap justify-center">
-            {filteredData.map((item, index) => (
-              <div key={index} className="flex-none w-[460px] mb-10 mr-5">
-                <a href="/enquiry" className="block shadow-xl p-5 bg-gray-50 border border-gray-200">
-                  <img src={item.img} className="shadow-md w-full h-[430px]" alt={item.name} />
-                  <div className="text-center mt-5">
-                    <p className="font-bold text-xl">REV-{item.rev}</p>
-                    <p className="font-medium text-md mt-3">{item.name}</p>
-                    <div className="mt-5 mb-5">
-                      <a href="/enquiry" className="bg-black text-white py-3.5 px-16">ENQUIRY NOW</a>
+          <div className="flex justify-center">
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:p-4 w-full">
+              {filteredData.map((item, index) => (
+                <div key={index} className="flex-none">
+                  <Link href="/enquiry">
+                    <div className="block shadow-xl p-3 md:p-5 bg-gray-50 border border-gray-200">
+                      <img src={item.img} className="shadow-md w-full md:h-[430px] xs:h-[250px]" alt={item.name} />
+                      <div className="text-center mt-3 md:mt-5">
+                        <p className="font-bold text-lg md:text-xl">REV-{item.rev}</p>
+                        <p className="font-medium text-md md:text-lg mt-2 md:mt-3">{item.name}</p>
+                        <div className="mt-3 md:mt-5 mb-3 md:mb-5">
+                          <a className="bg-black text-white py-2 md:py-3 px-10 md:px-16 text-sm md:text-base">ENQUIRY NOW</a>
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                </a>
-              </div>
-            ))}
+                  </Link>
+                </div>
+              ))}
+            </div>
           </div>
-
         </div>
       </Layout>
     </>
-  )
+  );
 }
+

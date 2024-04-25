@@ -7,14 +7,14 @@ export default function about() {
       <Layout >
         <div style={{
           position: 'relative',
-          backgroundColor: 'black', // Set background color to black
+          backgroundColor: 'black', 
           width: '100vw',
           justifyContent: 'center',
           alignItems: 'center',
-          color: 'white', // Set text color to white
+          color: 'white', 
         }} className='flex flex-col'>
 
-          {/* Background Image */}
+
           <div style={{
             position: 'absolute',
             top: 0,
@@ -27,10 +27,10 @@ export default function about() {
             filter: 'brightness(50%)'
           }} />
 
-          {/* Content */}
+          
           <div style={{
             position: 'relative',
-            zIndex: '1', // Set higher z-index to place it above the blurred background
+            zIndex: '1', 
           }}>
             <div className='flex flex-col justify-center items-center text-center md:p-20 p-16'>
               <p className='text-5xl font-bold'>About Us</p>

@@ -4,19 +4,19 @@ import Footer from "@/app/components/Footer";
 import Layout from '../components/Layout';
 
 export default function Download() {
-    return (
-        <>
-            <Layout >
-            <div style={{
+  return (
+    <>
+      <Layout >
+        <div style={{
           position: 'relative',
-          backgroundColor: 'black', // Set background color to black
+          backgroundColor: 'black',
           width: '100vw',
           justifyContent: 'center',
           alignItems: 'center',
-          color: 'white', // Set text color to white
+          color: 'white',
         }} className='flex flex-col'>
 
-          {/* Background Image */}
+
           <div style={{
             position: 'absolute',
             top: 0,
@@ -29,10 +29,10 @@ export default function Download() {
             filter: 'brightness(50%)'
           }} />
 
-          {/* Content */}
+
           <div style={{
             position: 'relative',
-            zIndex: '1', // Set higher z-index to place it above the blurred background
+            zIndex: '1',
           }}>
             <div className='justify-center md:p-20 p-16'>
               <p className='text-5xl font-bold'>Download</p>
@@ -54,20 +54,20 @@ export default function Download() {
             </div>
           </div>
         </div>
-                    <div className='bg-[#FAFAFA] mt-16  p-12' style={{ width: '100vw' }}>
-                        <a href='https://fablefaucets.com/wp-content/uploads/2024/03/FABLE-Faucet-with-Accessories-2023-2_compressed-1.pdf'>
-                            <div className='flex flex-col justify-center items-center'>
-                                <div >
-                                    <img src='./assets/12.png' style={{ width: '40vw' }} />
-                                </div>
-                                <div>
-                                    <p className='mt-5 text-2xl font-bold'>DOWNLOAD CATALOGUE</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-            
-            </Layout>
-        </>
-    )
+        <div className='bg-[#FAFAFA] mt-16  p-12' style={{ width: '100vw' }}>
+          <a href='https://fablefaucets.com/wp-content/uploads/2024/03/FABLE-Faucet-with-Accessories-2023-2_compressed-1.pdf'>
+            <div className='flex flex-col justify-center items-center'>
+              <div >
+                <img src='./assets/12.png' style={{ width: '40vw' }} />
+              </div>
+              <div>
+                <p className='mt-5 text-2xl font-bold'>DOWNLOAD CATALOGUE</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+      </Layout>
+    </>
+  )
 }

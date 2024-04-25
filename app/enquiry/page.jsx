@@ -32,7 +32,7 @@ export default function enquiry() {
                         
                         <div style={{
                             position: 'relative',
-                            zIndex: '1', // Set higher z-index to place it above the blurred background
+                            zIndex: '1', 
                         }}>
                             <div className='justify-center md:p-20 p-16 '>
                                 <p className='text-5xl font-bold'>Enquiry Now</p>

@@ -97,23 +97,23 @@ export default function Homepage() {
   return (
     <div>
       <Header />
-      <div className="carousel w-full h-5/6">
+      <div className="carousel md:w-full md:h-5/6">
         <div id="slide1" className="carousel-item relative w-full">
-          <img src="assets/3.jpg" className="w-full" />
+          <img src="./assets/3.jpg" className="w-full" />
           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <a href="#slide4" className="btn btn-circle">❮</a>
             <a href="#slide2" className="btn btn-circle">❯</a>
           </div>
         </div>
         <div id="slide2" className="carousel-item relative w-full">
-          <img src="assets/2.jpg" className="w-full" />
+          <img src="./assets/2.jpg" className="w-full" />
           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <a href="#slide1" className="btn btn-circle">❮</a>
             <a href="#slide3" className="btn btn-circle">❯</a>
           </div>
         </div>
         <div id="slide3" className="carousel-item relative w-full">
-          <img src="assets/1.jpg" className="w-full" />
+          <img src="./assets/1.jpg" className="w-full" />
           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <a href="#slide1" className="btn btn-circle">❮</a>
             <a href="#slide3" className="btn btn-circle">❯</a>
@@ -124,7 +124,7 @@ export default function Homepage() {
 
       <div className="flex sm:flex-row flex-col mb-4 p-5 " htmlFor="reload">
         <div className="md:w-1/2 flex md:mx-auto md:justify-end md:items-end justify-center items-center ">
-          <img src='assets/about1-1.png' className='md:w-2/3 md:block hidden'  />
+          <img src='./assets/about1-1.png' className='md:w-2/3 md:block hidden'  />
         </div>
         <div className="md:w-1/2 "   >
           <div className=" md:w-3/4  bg-base-100 ">
@@ -173,7 +173,7 @@ export default function Homepage() {
       <Productitem />
 
        <div>
-        <div style={{ backgroundImage: 'url("assets/black-6.jpg")' }} className='w-full'>
+        <div style={{ backgroundImage: 'url("./assets/black-6.jpg")' }} className='w-full'>
           <div className="flex md:flex-row flex-col">
             <div className="md:w-1/2 md:p-24 p-10 ">
               <img src='assets/7-removebg-preview.png' />
@@ -188,13 +188,13 @@ export default function Homepage() {
           </div>
         </div>
 
-{/*
-        <div className="flex flex-col  md:w-[100vw] text-white md:justify-center md:items-center bg-black overflow-y-hidden" htmlFor="reload" >
 
-          <div style={{ position: 'absolute', backgroundImage: 'url("./assets/bg01.jpg")', backgroundRepeat: 'no-repeat', backgroundSize: 'cover', filter: 'brightness(30%)' }} className='w-[100%] md:h-[100%] h-[98%] md:top-0 left-0' />
+        <div className="flex flex-col  md:w-[100vw] text-white md:justify-center md:items-center bg-black  " htmlFor="reload" >
 
-          <div style={{ position: 'relative', zIndex: '0' }} className='md:w-[100%] '>
-            <div className="flex md:flex-row flex-col mb-4 md:p-24 p-12">
+          <div style={{ position: 'absolute', backgroundImage: 'url("./assets/bg01.jpg")', backgroundRepeat: 'no-repeat', backgroundSize: 'cover', filter: 'brightness(30%)' }} className='w-[100%] md:h-[100%] h-[98%] ' />
+
+          <div style={{ position: 'relative', zIndex: '0' }} className='md:w-[100%]  '>
+            <div className="flex md:flex-row flex-col mb-4 md:p-24  ">
               <div className="md:w-1/2">
                 <p className='text-4xl font-bold md:ms-80'>Contact info</p>
                 <div className="flex mb-4">
@@ -231,7 +231,7 @@ export default function Homepage() {
                       </svg>
                     </button>
                   </div>
-                  <div className="md:w-52 ">
+                  <div className="md:w-52  ">
                     <p className='text-2xl font-bold'>Mail us for<br /> information</p>
                     <p className='text-lg'>fablefaucet@gmail.com</p>
                   </div>
@@ -261,9 +261,6 @@ export default function Homepage() {
             </div>
           </div>
         </div>
-
-
-*/}
       </div> 
       <Footer />
     </div>
